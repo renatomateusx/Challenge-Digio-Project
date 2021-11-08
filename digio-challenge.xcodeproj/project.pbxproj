@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998DE273985BC00F3846C /* AppDelegate.swift */; };
+		41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E0273985BC00F3846C /* SceneDelegate.swift */; };
+		41D998E3273985BC00F3846C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E2273985BC00F3846C /* HomeViewController.swift */; };
+		41D998E6273985BC00F3846C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D998E4273985BC00F3846C /* Main.storyboard */; };
+		41D998E8273985BD00F3846C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D998E7273985BD00F3846C /* Assets.xcassets */; };
+		41D998EB273985BD00F3846C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D998E9273985BD00F3846C /* LaunchScreen.storyboard */; };
+		41D998F6273985BD00F3846C /* digio_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998F5273985BD00F3846C /* digio_challengeTests.swift */; };
+		41D99901273985BD00F3846C /* digio_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D99900273985BD00F3846C /* digio_challengeUITests.swift */; };
+		41D99916273986FC00F3846C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D99915273986FC00F3846C /* NetworkService.swift */; };
+		41D9991C273987CC00F3846C /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9991B273987CC00F3846C /* ProductsService.swift */; };
+		41D9991E273987E600F3846C /* DataProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9991D273987E600F3846C /* DataProducts.swift */; };
+		41D99920273988FF00F3846C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9991F273988FF00F3846C /* Constants.swift */; };
+		41D9992227398A5500F3846C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992127398A5500F3846C /* HomeViewModel.swift */; };
+		41D9992527398D5100F3846C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992427398D5100F3846C /* UITableView+Extensions.swift */; };
+		41D9992827398E9C00F3846C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992627398E9C00F3846C /* ProductCell.swift */; };
+		41D9992927398E9C00F3846C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9992727398E9C00F3846C /* ProductCell.xib */; };
+		4DB75C070F5A20C1C89D6820 /* Pods_digio_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CE9FB98F243FBB15025A64 /* Pods_digio_challenge.framework */; };
+		CF29C59F665ED69CEB73E491 /* Pods_digio_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE1576A4456F1F36CA04B6 /* Pods_digio_challengeTests.framework */; };
+		F7D4BFEB9AD10688B40F5D05 /* Pods_digio_challenge_digio_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9382AF72708FA80D8E65F10C /* Pods_digio_challenge_digio_challengeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41D998F2273985BD00F3846C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41D998D3273985BC00F3846C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41D998DA273985BC00F3846C;
+			remoteInfo = "digio-challenge";
+		};
+		41D998FD273985BD00F3846C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41D998D3273985BC00F3846C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41D998DA273985BC00F3846C;
+			remoteInfo = "digio-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CE9FB98F243FBB15025A64 /* Pods_digio_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digio_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-digio-challengeTests/Pods-digio-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41D998DB273985BC00F3846C /* digio-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "digio-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D998DE273985BC00F3846C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41D998E0273985BC00F3846C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41D998E2273985BC00F3846C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41D998E5273985BC00F3846C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41D998E7273985BD00F3846C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41D998EA273985BD00F3846C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41D998EC273985BD00F3846C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D998F1273985BD00F3846C /* digio-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "digio-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D998F5273985BD00F3846C /* digio_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digio_challengeTests.swift; sourceTree = "<group>"; };
+		41D998F7273985BD00F3846C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D998FC273985BD00F3846C /* digio-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "digio-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D99900273985BD00F3846C /* digio_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digio_challengeUITests.swift; sourceTree = "<group>"; };
+		41D99902273985BD00F3846C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D99915273986FC00F3846C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		41D9991B273987CC00F3846C /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		41D9991D273987E600F3846C /* DataProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProducts.swift; sourceTree = "<group>"; };
+		41D9991F273988FF00F3846C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41D9992127398A5500F3846C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		41D9992427398D5100F3846C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		41D9992627398E9C00F3846C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		41D9992727398E9C00F3846C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		787662F812E3A03071F97266 /* Pods-digio-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge.debug.xcconfig"; path = "Target Support Files/Pods-digio-challenge/Pods-digio-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		87DE9D69FB3648B8A20C35A0 /* Pods-digio-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-digio-challengeTests/Pods-digio-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		87E058D3CE528E50CACC70CA /* Pods-digio-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge.release.xcconfig"; path = "Target Support Files/Pods-digio-challenge/Pods-digio-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		88CE1576A4456F1F36CA04B6 /* Pods_digio_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digio_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9382AF72708FA80D8E65F10C /* Pods_digio_challenge_digio_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digio_challenge_digio_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1576C1A47C68EF949C68635 /* Pods-digio-challenge-digio-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge-digio-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-digio-challenge-digio-challengeUITests/Pods-digio-challenge-digio-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E82BFAD3AB532E71B893D1D3 /* Pods-digio-challenge-digio-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge-digio-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-digio-challenge-digio-challengeUITests/Pods-digio-challenge-digio-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41D998D8273985BC00F3846C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB75C070F5A20C1C89D6820 /* Pods_digio_challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998EE273985BD00F3846C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF29C59F665ED69CEB73E491 /* Pods_digio_challengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998F9273985BD00F3846C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4BFEB9AD10688B40F5D05 /* Pods_digio_challenge_digio_challengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41D998D2273985BC00F3846C = {
+			isa = PBXGroup;
+			children = (
+				41D998DD273985BC00F3846C /* digio-challenge */,
+				41D998F4273985BD00F3846C /* digio-challengeTests */,
+				41D998FF273985BD00F3846C /* digio-challengeUITests */,
+				41D998DC273985BC00F3846C /* Products */,
+				C3EDC1E045AF8FF7B9461FD1 /* Pods */,
+				7D447F2D555CC80C675946B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41D998DC273985BC00F3846C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41D998DB273985BC00F3846C /* digio-challenge.app */,
+				41D998F1273985BD00F3846C /* digio-challengeTests.xctest */,
+				41D998FC273985BD00F3846C /* digio-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41D998DD273985BC00F3846C /* digio-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				41D9990E2739866A00F3846C /* Base.Iproj */,
+				41D99910273986A100F3846C /* Model */,
+				41D99911273986A700F3846C /* Home */,
+				41D99912273986AC00F3846C /* Detail */,
+				41D99914273986EA00F3846C /* Fundamentals */,
+				41D998EC273985BD00F3846C /* Info.plist */,
+			);
+			path = "digio-challenge";
+			sourceTree = "<group>";
+		};
+		41D998F4273985BD00F3846C /* digio-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				41D998F5273985BD00F3846C /* digio_challengeTests.swift */,
+				41D998F7273985BD00F3846C /* Info.plist */,
+			);
+			path = "digio-challengeTests";
+			sourceTree = "<group>";
+		};
+		41D998FF273985BD00F3846C /* digio-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41D99900273985BD00F3846C /* digio_challengeUITests.swift */,
+				41D99902273985BD00F3846C /* Info.plist */,
+			);
+			path = "digio-challengeUITests";
+			sourceTree = "<group>";
+		};
+		41D9990E2739866A00F3846C /* Base.Iproj */ = {
+			isa = PBXGroup;
+			children = (
+				41D998E9273985BD00F3846C /* LaunchScreen.storyboard */,
+				41D998E4273985BC00F3846C /* Main.storyboard */,
+				41D9990F2739867500F3846C /* Resources */,
+			);
+			path = Base.Iproj;
+			sourceTree = "<group>";
+		};
+		41D9990F2739867500F3846C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41D9992327398D4600F3846C /* Extensions */,
+				41D998E7273985BD00F3846C /* Assets.xcassets */,
+				41D998DE273985BC00F3846C /* AppDelegate.swift */,
+				41D998E0273985BC00F3846C /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41D99910273986A100F3846C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41D9991D273987E600F3846C /* DataProducts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D99911273986A700F3846C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				41D999182739878100F3846C /* View */,
+				41D999192739878D00F3846C /* ViewModel */,
+				41D9991A2739879400F3846C /* Service */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		41D99912273986AC00F3846C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		41D99914273986EA00F3846C /* Fundamentals */ = {
+			isa = PBXGroup;
+			children = (
+				41D99915273986FC00F3846C /* NetworkService.swift */,
+				41D9991F273988FF00F3846C /* Constants.swift */,
+			);
+			path = Fundamentals;
+			sourceTree = "<group>";
+		};
+		41D999172739876500F3846C /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				41D9992627398E9C00F3846C /* ProductCell.swift */,
+				41D9992727398E9C00F3846C /* ProductCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		41D999182739878100F3846C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41D999172739876500F3846C /* TableCell */,
+				41D998E2273985BC00F3846C /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41D999192739878D00F3846C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41D9992127398A5500F3846C /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41D9991A2739879400F3846C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				41D9991B273987CC00F3846C /* ProductsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		41D9992327398D4600F3846C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41D9992427398D5100F3846C /* UITableView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D447F2D555CC80C675946B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CE9FB98F243FBB15025A64 /* Pods_digio_challenge.framework */,
+				9382AF72708FA80D8E65F10C /* Pods_digio_challenge_digio_challengeUITests.framework */,
+				88CE1576A4456F1F36CA04B6 /* Pods_digio_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3EDC1E045AF8FF7B9461FD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				787662F812E3A03071F97266 /* Pods-digio-challenge.debug.xcconfig */,
+				87E058D3CE528E50CACC70CA /* Pods-digio-challenge.release.xcconfig */,
+				E82BFAD3AB532E71B893D1D3 /* Pods-digio-challenge-digio-challengeUITests.debug.xcconfig */,
+				C1576C1A47C68EF949C68635 /* Pods-digio-challenge-digio-challengeUITests.release.xcconfig */,
+				04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */,
+				87DE9D69FB3648B8A20C35A0 /* Pods-digio-challengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41D998DA273985BC00F3846C /* digio-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D99905273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challenge" */;
+			buildPhases = (
+				98B16902176E61ABF2D89E24 /* [CP] Check Pods Manifest.lock */,
+				41D998D7273985BC00F3846C /* Sources */,
+				41D998D8273985BC00F3846C /* Frameworks */,
+				41D998D9273985BC00F3846C /* Resources */,
+				F2EE5294708E4A8A558EBD68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "digio-challenge";
+			productName = "digio-challenge";
+			productReference = 41D998DB273985BC00F3846C /* digio-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41D998F0273985BD00F3846C /* digio-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D99908273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challengeTests" */;
+			buildPhases = (
+				35040FDCE3AB0706480B9ABA /* [CP] Check Pods Manifest.lock */,
+				41D998ED273985BD00F3846C /* Sources */,
+				41D998EE273985BD00F3846C /* Frameworks */,
+				41D998EF273985BD00F3846C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41D998F3273985BD00F3846C /* PBXTargetDependency */,
+			);
+			name = "digio-challengeTests";
+			productName = "digio-challengeTests";
+			productReference = 41D998F1273985BD00F3846C /* digio-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41D998FB273985BD00F3846C /* digio-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D9990B273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challengeUITests" */;
+			buildPhases = (
+				1F1EA4D1EDB031FB78AFB162 /* [CP] Check Pods Manifest.lock */,
+				41D998F8273985BD00F3846C /* Sources */,
+				41D998F9273985BD00F3846C /* Frameworks */,
+				41D998FA273985BD00F3846C /* Resources */,
+				5DA4964ECC02369945A57433 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41D998FE273985BD00F3846C /* PBXTargetDependency */,
+			);
+			name = "digio-challengeUITests";
+			productName = "digio-challengeUITests";
+			productReference = 41D998FC273985BD00F3846C /* digio-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41D998D3273985BC00F3846C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					41D998DA273985BC00F3846C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					41D998F0273985BD00F3846C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41D998DA273985BC00F3846C;
+					};
+					41D998FB273985BD00F3846C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41D998DA273985BC00F3846C;
+					};
+				};
+			};
+			buildConfigurationList = 41D998D6273985BC00F3846C /* Build configuration list for PBXProject "digio-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41D998D2273985BC00F3846C;
+			productRefGroup = 41D998DC273985BC00F3846C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41D998DA273985BC00F3846C /* digio-challenge */,
+				41D998F0273985BD00F3846C /* digio-challengeTests */,
+				41D998FB273985BD00F3846C /* digio-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41D998D9273985BC00F3846C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D998EB273985BD00F3846C /* LaunchScreen.storyboard in Resources */,
+				41D9992927398E9C00F3846C /* ProductCell.xib in Resources */,
+				41D998E8273985BD00F3846C /* Assets.xcassets in Resources */,
+				41D998E6273985BC00F3846C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998EF273985BD00F3846C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998FA273985BD00F3846C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1EA4D1EDB031FB78AFB162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-digio-challenge-digio-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35040FDCE3AB0706480B9ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-digio-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DA4964ECC02369945A57433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digio-challenge-digio-challengeUITests/Pods-digio-challenge-digio-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digio-challenge-digio-challengeUITests/Pods-digio-challenge-digio-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-digio-challenge-digio-challengeUITests/Pods-digio-challenge-digio-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B16902176E61ABF2D89E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-digio-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2EE5294708E4A8A558EBD68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digio-challenge/Pods-digio-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digio-challenge/Pods-digio-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-digio-challenge/Pods-digio-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41D998D7273985BC00F3846C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D9992527398D5100F3846C /* UITableView+Extensions.swift in Sources */,
+				41D998E3273985BC00F3846C /* HomeViewController.swift in Sources */,
+				41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */,
+				41D99916273986FC00F3846C /* NetworkService.swift in Sources */,
+				41D9992227398A5500F3846C /* HomeViewModel.swift in Sources */,
+				41D9991E273987E600F3846C /* DataProducts.swift in Sources */,
+				41D99920273988FF00F3846C /* Constants.swift in Sources */,
+				41D9992827398E9C00F3846C /* ProductCell.swift in Sources */,
+				41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */,
+				41D9991C273987CC00F3846C /* ProductsService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998ED273985BD00F3846C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D998F6273985BD00F3846C /* digio_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D998F8273985BD00F3846C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D99901273985BD00F3846C /* digio_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41D998F3273985BD00F3846C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41D998DA273985BC00F3846C /* digio-challenge */;
+			targetProxy = 41D998F2273985BD00F3846C /* PBXContainerItemProxy */;
+		};
+		41D998FE273985BD00F3846C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41D998DA273985BC00F3846C /* digio-challenge */;
+			targetProxy = 41D998FD273985BD00F3846C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41D998E4273985BC00F3846C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D998E5273985BC00F3846C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41D998E9273985BD00F3846C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D998EA273985BD00F3846C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41D99903273985BD00F3846C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41D99904273985BD00F3846C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41D99906273985BD00F3846C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787662F812E3A03071F97266 /* Pods-digio-challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41D99907273985BD00F3846C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E058D3CE528E50CACC70CA /* Pods-digio-challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41D99909273985BD00F3846C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/digio-challenge.app/digio-challenge";
+			};
+			name = Debug;
+		};
+		41D9990A273985BD00F3846C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87DE9D69FB3648B8A20C35A0 /* Pods-digio-challengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/digio-challenge.app/digio-challenge";
+			};
+			name = Release;
+		};
+		41D9990C273985BD00F3846C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E82BFAD3AB532E71B893D1D3 /* Pods-digio-challenge-digio-challengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "digio-challenge";
+			};
+			name = Debug;
+		};
+		41D9990D273985BD00F3846C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1576C1A47C68EF949C68635 /* Pods-digio-challenge-digio-challengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPDNCAZJQ6;
+				INFOPLIST_FILE = "digio-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatomateusx.digio-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "digio-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41D998D6273985BC00F3846C /* Build configuration list for PBXProject "digio-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D99903273985BD00F3846C /* Debug */,
+				41D99904273985BD00F3846C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D99905273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D99906273985BD00F3846C /* Debug */,
+				41D99907273985BD00F3846C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D99908273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D99909273985BD00F3846C /* Debug */,
+				41D9990A273985BD00F3846C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D9990B273985BD00F3846C /* Build configuration list for PBXNativeTarget "digio-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D9990C273985BD00F3846C /* Debug */,
+				41D9990D273985BD00F3846C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41D998D3273985BC00F3846C /* Project object */;
+}

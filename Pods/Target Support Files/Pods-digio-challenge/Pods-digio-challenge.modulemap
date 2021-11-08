@@ -1,0 +1,6 @@
+framework module Pods_digio_challenge {
+  umbrella header "Pods-digio-challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
