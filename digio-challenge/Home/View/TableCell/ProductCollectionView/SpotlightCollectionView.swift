@@ -13,7 +13,7 @@ class SpotlightCollectionView: UITableViewCell {
     
     // MARK: - Private Properties
     static let identifier: String = "SpotlightCollectionView"
-    var products: [SpotLight] = []
+    var spotlight: SpotLights = []
     
     // MARK: - LifeCycle
     override func awakeFromNib() {
@@ -47,8 +47,8 @@ extension SpotlightCollectionView {
 
 // MARK: - Setup Data
 extension SpotlightCollectionView {
-    func setupData(products: [SpotLight]) {
-        self.products = products
+    func setupData(products: SpotLights) {
+        self.spotlight = products
         collectionView.reloadData()
     }
 }
@@ -57,11 +57,11 @@ extension SpotlightCollectionView {
 
 extension SpotlightCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.products.count
+        return self.spotlight.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let pic = self.products[indexPath.row]
+        let pic = self.spotlight[indexPath.row]
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpotlightCollectionViewCell.identifier,
                                                             for: indexPath) as? SpotlightCollectionViewCell  else { return  UICollectionViewCell() }
         cell.configure(with: pic)

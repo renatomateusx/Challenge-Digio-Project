@@ -15,12 +15,13 @@ class UIDigioTableViewCell: UITableViewCell {
     @IBOutlet weak var digioTitleLabel: UILabel!
     @IBOutlet weak var digioImageView: UIImageView!
     
-    
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 }
 
+// MARK: - Configuration
 extension UIDigioTableViewCell {
     func configure(with cash: Cash?) {
         fillLabelWithAttributedText(title: cash?.title)

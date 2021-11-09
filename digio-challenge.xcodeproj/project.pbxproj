@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		41B2FCC9273A689F008D15EE /* UIDigioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */; };
 		41B2FCCA273A689F008D15EE /* UIDigioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */; };
+		41B2FCCD273A742A008D15EE /* ProductCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2FCCB273A742A008D15EE /* ProductCollectionView.swift */; };
+		41B2FCCE273A742A008D15EE /* ProductCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B2FCCC273A742A008D15EE /* ProductCollectionView.xib */; };
+		41B2FCD1273A757D008D15EE /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2FCCF273A757D008D15EE /* ProductCollectionViewCell.swift */; };
+		41B2FCD2273A757D008D15EE /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B2FCD0273A757D008D15EE /* ProductCollectionViewCell.xib */; };
+		41B2FCD5273A9EA8008D15EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2FCD3273A9EA8008D15EE /* DetailViewController.swift */; };
+		41B2FCD6273A9EA8008D15EE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B2FCD4273A9EA8008D15EE /* DetailViewController.xib */; };
 		41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998DE273985BC00F3846C /* AppDelegate.swift */; };
 		41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E0273985BC00F3846C /* SceneDelegate.swift */; };
 		41D998E3273985BC00F3846C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E2273985BC00F3846C /* HomeViewController.swift */; };
@@ -58,6 +64,12 @@
 		04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-digio-challengeTests/Pods-digio-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDigioTableViewCell.swift; sourceTree = "<group>"; };
 		41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDigioTableViewCell.xib; sourceTree = "<group>"; };
+		41B2FCCB273A742A008D15EE /* ProductCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionView.swift; sourceTree = "<group>"; };
+		41B2FCCC273A742A008D15EE /* ProductCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionView.xib; sourceTree = "<group>"; };
+		41B2FCCF273A757D008D15EE /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		41B2FCD0273A757D008D15EE /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		41B2FCD3273A9EA8008D15EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		41B2FCD4273A9EA8008D15EE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		41D998DB273985BC00F3846C /* digio-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "digio-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D998DE273985BC00F3846C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D998E0273985BC00F3846C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +230,8 @@
 		41D99912273986AC00F3846C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				41B2FCD3273A9EA8008D15EE /* DetailViewController.swift */,
+				41B2FCD4273A9EA8008D15EE /* DetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -282,6 +296,8 @@
 				41D999332739AA8D00F3846C /* Cells */,
 				41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */,
 				41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */,
+				41B2FCCB273A742A008D15EE /* ProductCollectionView.swift */,
+				41B2FCCC273A742A008D15EE /* ProductCollectionView.xib */,
 			);
 			path = ProductCollectionView;
 			sourceTree = "<group>";
@@ -293,6 +309,8 @@
 				41D999302739A9B300F3846C /* SpotlightCollectionViewCell.xib */,
 				41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */,
 				41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */,
+				41B2FCCF273A757D008D15EE /* ProductCollectionViewCell.swift */,
+				41B2FCD0273A757D008D15EE /* ProductCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -430,7 +448,10 @@
 			files = (
 				41D998EB273985BD00F3846C /* LaunchScreen.storyboard in Resources */,
 				41D999372739F3FB00F3846C /* HeaderCellTableViewCell.xib in Resources */,
+				41B2FCD2273A757D008D15EE /* ProductCollectionViewCell.xib in Resources */,
 				41D9992927398E9C00F3846C /* ProductCell.xib in Resources */,
+				41B2FCD6273A9EA8008D15EE /* DetailViewController.xib in Resources */,
+				41B2FCCE273A742A008D15EE /* ProductCollectionView.xib in Resources */,
 				41D999322739A9B300F3846C /* SpotlightCollectionViewCell.xib in Resources */,
 				41D998E8273985BD00F3846C /* Assets.xcassets in Resources */,
 				41D9992E2739A85F00F3846C /* SpotlightCollectionView.xib in Resources */,
@@ -564,7 +585,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D9992527398D5100F3846C /* UITableView+Extensions.swift in Sources */,
+				41B2FCD5273A9EA8008D15EE /* DetailViewController.swift in Sources */,
 				41D998E3273985BC00F3846C /* HomeViewController.swift in Sources */,
+				41B2FCD1273A757D008D15EE /* ProductCollectionViewCell.swift in Sources */,
 				41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */,
 				41D99916273986FC00F3846C /* NetworkService.swift in Sources */,
 				41D9992227398A5500F3846C /* HomeViewModel.swift in Sources */,
@@ -573,6 +596,7 @@
 				41D9991E273987E600F3846C /* DataProducts.swift in Sources */,
 				41D99920273988FF00F3846C /* Constants.swift in Sources */,
 				41D9992827398E9C00F3846C /* ProductCell.swift in Sources */,
+				41B2FCCD273A742A008D15EE /* ProductCollectionView.swift in Sources */,
 				41B2FCC9273A689F008D15EE /* UIDigioTableViewCell.swift in Sources */,
 				41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */,
 				41D999312739A9B300F3846C /* SpotlightCollectionViewCell.swift in Sources */,

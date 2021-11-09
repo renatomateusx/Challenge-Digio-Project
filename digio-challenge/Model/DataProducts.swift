@@ -20,11 +20,15 @@ struct DataProducts: Codable {
     let cash: Cash
 }
 
+typealias SpotLights = [SpotLight]
+
 struct SpotLight: Codable {
     let name: String
     let bannerURL: String
     let description: String
 }
+
+typealias Products = [Product]
 
 struct Product: Codable {
     let name: String

@@ -48,6 +48,9 @@ extension HomeViewController {
         tableView.register(UINib(nibName: UIDigioTableViewCell.identifier,
                                  bundle: nil),
                            forCellReuseIdentifier: UIDigioTableViewCell.identifier)
+        tableView.register(UINib(nibName: ProductCollectionView.identifier,
+                                 bundle: nil),
+                           forCellReuseIdentifier: ProductCollectionView.identifier)
         
         tableView.tableFooterView = UIView()
         tableView.showsVerticalScrollIndicator = false
@@ -91,18 +94,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        #warning("TODO: Just try only put return 1 and see what happens")
-        let sec = viewModel.sections[section]
-        switch sec {
-        case .header:
-            return 1
-        case .spotlight:
-            return 1
-        case .cash:
-            return 1
-        case .products:
-            return 1
-        }
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -121,13 +113,11 @@ extension HomeViewController: UITableViewDataSource {
             cell.configure(with: self.dataSource?.cash)
             return cell
         case .products:
-            return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductCollectionView.identifier, for: indexPath) as? ProductCollectionView else { return UITableViewCell() }
+            cell.setupData(with: self.dataSource?.products ?? [])
+            cell.delegate = self
+            return cell
         }
-        
-//            guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductCollectionView.identifier, for: indexPath) as? ProductCollectionView else { return UITableViewCell() }
-//            cell.setupData(products: self.dataSource?.spotlight ?? [])
-//            return cell
-//        cell.config(with: product)
     }
 }
 
@@ -141,9 +131,9 @@ extension HomeViewController: UITableViewDelegate {
         case .spotlight:
             return 200
         case .cash:
-            return 170
+            return 200
         case .products:
-            return 0
+            return 200
         }
     }
 }
@@ -169,6 +159,19 @@ private extension HomeViewController {
         DispatchQueue.main.async {
             self.tableView.backgroundView = nil
             self.tableView.reloadData()
+        }
+    }
+}
+
+// MARK: - ProductCollectionViewDelegate
+
+extension HomeViewController: ProductCollectionViewDelegate {
+    func didProductSelected(product: Product) {
+        DispatchQueue.main.async {
+            let controller = DetailViewController(with: product)
+            let navigationController = UINavigationController(rootViewController: controller)
+            navigationController.modalPresentationStyle = .overCurrentContext
+            self.present(navigationController, animated: true, completion: nil)
         }
     }
 }
