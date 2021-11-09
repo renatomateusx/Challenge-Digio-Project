@@ -7,12 +7,35 @@
 
 import Foundation
 
-struct DataProducts: Codable {
-    let spotlight: [Product]
+enum Sections {
+    case header
+    case spotlight
+    case products
+    case cash
 }
 
-struct Product: Codable {
+struct DataProducts: Codable {
+    let spotlight: [SpotLight]
+    let products: [Product]
+    let cash: Cash
+}
+
+struct SpotLight: Codable {
     let name: String
     let bannerURL: String
     let description: String
 }
+
+struct Product: Codable {
+    let name: String
+    let imageURL: String
+    let description: String
+}
+
+struct Cash: Codable {
+    let title: String
+    let bannerURL: String
+    let description: String
+}
+
+// We can try to use coding keys after ready to minimize structs length turning it in just one struct getting let case for each type of spotlight, products, or cash

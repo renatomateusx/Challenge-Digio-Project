@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeViewModelDelegate: AnyObject {
-    func onSuccessFetchingProducts(products: [Product])
+    func onSuccessFetchingProducts(products: DataProducts)
     func onFailureFetchingProducts(error: Error)
 }
 
@@ -17,6 +17,7 @@ class HomeViewModel {
     // MARK: - Private Properties
     let productsService: ProductsServiceProtocol
     var delegate: HomeViewModelDelegate?
+    let sections: [Sections] = [.header, .spotlight, .cash, .products]
     // MARK: - Inits
     
     init(with service: ProductsServiceProtocol) {
@@ -28,7 +29,7 @@ class HomeViewModel {
             switch result {
             
             case .success(let products):
-                self.delegate?.onSuccessFetchingProducts(products: products.spotlight)
+                self.delegate?.onSuccessFetchingProducts(products: products)
             case .failure(let error):
                 self.delegate?.onFailureFetchingProducts(error: error)
             }

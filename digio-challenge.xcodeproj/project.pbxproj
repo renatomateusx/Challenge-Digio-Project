@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B2FCC9273A689F008D15EE /* UIDigioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */; };
+		41B2FCCA273A689F008D15EE /* UIDigioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */; };
 		41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998DE273985BC00F3846C /* AppDelegate.swift */; };
 		41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E0273985BC00F3846C /* SceneDelegate.swift */; };
 		41D998E3273985BC00F3846C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D998E2273985BC00F3846C /* HomeViewController.swift */; };
@@ -23,6 +25,12 @@
 		41D9992527398D5100F3846C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992427398D5100F3846C /* UITableView+Extensions.swift */; };
 		41D9992827398E9C00F3846C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992627398E9C00F3846C /* ProductCell.swift */; };
 		41D9992927398E9C00F3846C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9992727398E9C00F3846C /* ProductCell.xib */; };
+		41D9992D2739A85F00F3846C /* SpotlightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */; };
+		41D9992E2739A85F00F3846C /* SpotlightCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */; };
+		41D999312739A9B300F3846C /* SpotlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992F2739A9B300F3846C /* SpotlightCollectionViewCell.swift */; };
+		41D999322739A9B300F3846C /* SpotlightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D999302739A9B300F3846C /* SpotlightCollectionViewCell.xib */; };
+		41D999362739F3FB00F3846C /* HeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D999342739F3FB00F3846C /* HeaderCellTableViewCell.swift */; };
+		41D999372739F3FB00F3846C /* HeaderCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D999352739F3FB00F3846C /* HeaderCellTableViewCell.xib */; };
 		4DB75C070F5A20C1C89D6820 /* Pods_digio_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CE9FB98F243FBB15025A64 /* Pods_digio_challenge.framework */; };
 		CF29C59F665ED69CEB73E491 /* Pods_digio_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE1576A4456F1F36CA04B6 /* Pods_digio_challengeTests.framework */; };
 		F7D4BFEB9AD10688B40F5D05 /* Pods_digio_challenge_digio_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9382AF72708FA80D8E65F10C /* Pods_digio_challenge_digio_challengeUITests.framework */; };
@@ -48,6 +56,8 @@
 /* Begin PBXFileReference section */
 		00CE9FB98F243FBB15025A64 /* Pods_digio_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digio_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-digio-challengeTests/Pods-digio-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDigioTableViewCell.swift; sourceTree = "<group>"; };
+		41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDigioTableViewCell.xib; sourceTree = "<group>"; };
 		41D998DB273985BC00F3846C /* digio-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "digio-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D998DE273985BC00F3846C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D998E0273985BC00F3846C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +80,12 @@
 		41D9992427398D5100F3846C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		41D9992627398E9C00F3846C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		41D9992727398E9C00F3846C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionView.swift; sourceTree = "<group>"; };
+		41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotlightCollectionView.xib; sourceTree = "<group>"; };
+		41D9992F2739A9B300F3846C /* SpotlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		41D999302739A9B300F3846C /* SpotlightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotlightCollectionViewCell.xib; sourceTree = "<group>"; };
+		41D999342739F3FB00F3846C /* HeaderCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellTableViewCell.swift; sourceTree = "<group>"; };
+		41D999352739F3FB00F3846C /* HeaderCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCellTableViewCell.xib; sourceTree = "<group>"; };
 		787662F812E3A03071F97266 /* Pods-digio-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge.debug.xcconfig"; path = "Target Support Files/Pods-digio-challenge/Pods-digio-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		87DE9D69FB3648B8A20C35A0 /* Pods-digio-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-digio-challengeTests/Pods-digio-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		87E058D3CE528E50CACC70CA /* Pods-digio-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digio-challenge.release.xcconfig"; path = "Target Support Files/Pods-digio-challenge/Pods-digio-challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +236,9 @@
 			children = (
 				41D9992627398E9C00F3846C /* ProductCell.swift */,
 				41D9992727398E9C00F3846C /* ProductCell.xib */,
+				41D999342739F3FB00F3846C /* HeaderCellTableViewCell.swift */,
+				41D999352739F3FB00F3846C /* HeaderCellTableViewCell.xib */,
+				41D9992A2739A7AF00F3846C /* ProductCollectionView */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -257,6 +276,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		41D9992A2739A7AF00F3846C /* ProductCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				41D999332739AA8D00F3846C /* Cells */,
+				41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */,
+				41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */,
+			);
+			path = ProductCollectionView;
+			sourceTree = "<group>";
+		};
+		41D999332739AA8D00F3846C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				41D9992F2739A9B300F3846C /* SpotlightCollectionViewCell.swift */,
+				41D999302739A9B300F3846C /* SpotlightCollectionViewCell.xib */,
+				41B2FCC7273A689F008D15EE /* UIDigioTableViewCell.swift */,
+				41B2FCC8273A689F008D15EE /* UIDigioTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		7D447F2D555CC80C675946B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +317,6 @@
 				04BE1EA85B5E7B93EA237904 /* Pods-digio-challengeTests.debug.xcconfig */,
 				87DE9D69FB3648B8A20C35A0 /* Pods-digio-challengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -390,8 +429,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D998EB273985BD00F3846C /* LaunchScreen.storyboard in Resources */,
+				41D999372739F3FB00F3846C /* HeaderCellTableViewCell.xib in Resources */,
 				41D9992927398E9C00F3846C /* ProductCell.xib in Resources */,
+				41D999322739A9B300F3846C /* SpotlightCollectionViewCell.xib in Resources */,
 				41D998E8273985BD00F3846C /* Assets.xcassets in Resources */,
+				41D9992E2739A85F00F3846C /* SpotlightCollectionView.xib in Resources */,
+				41B2FCCA273A689F008D15EE /* UIDigioTableViewCell.xib in Resources */,
 				41D998E6273985BC00F3846C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,10 +568,14 @@
 				41D998DF273985BC00F3846C /* AppDelegate.swift in Sources */,
 				41D99916273986FC00F3846C /* NetworkService.swift in Sources */,
 				41D9992227398A5500F3846C /* HomeViewModel.swift in Sources */,
+				41D999362739F3FB00F3846C /* HeaderCellTableViewCell.swift in Sources */,
+				41D9992D2739A85F00F3846C /* SpotlightCollectionView.swift in Sources */,
 				41D9991E273987E600F3846C /* DataProducts.swift in Sources */,
 				41D99920273988FF00F3846C /* Constants.swift in Sources */,
 				41D9992827398E9C00F3846C /* ProductCell.swift in Sources */,
+				41B2FCC9273A689F008D15EE /* UIDigioTableViewCell.swift in Sources */,
 				41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */,
+				41D999312739A9B300F3846C /* SpotlightCollectionViewCell.swift in Sources */,
 				41D9991C273987CC00F3846C /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

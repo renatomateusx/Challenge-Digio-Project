@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ProductCell: UITableViewCell {
     // MARK: - Outlets
@@ -22,8 +23,9 @@ class ProductCell: UITableViewCell {
 }
 
 extension ProductCell {
-    func config(with product: Product) {
+    func config(with product: SpotLight) {
         self.productNameLabel.text = product.name
-        self.productNameLabel.kf.setImage(with: url)
+        guard let url = URL(string: product.bannerURL) else { return }
+        self.bannerImageView.kf.setImage(with: url)
     }
 }
