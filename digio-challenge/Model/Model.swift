@@ -14,7 +14,7 @@ enum Sections {
     case cash
 }
 
-struct DataProducts: Codable {
+struct DataModel: Codable {
     let spotlight: [SpotLight]
     let products: [Product]
     let cash: Cash

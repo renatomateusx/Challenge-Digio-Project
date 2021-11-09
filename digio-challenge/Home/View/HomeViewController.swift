@@ -14,8 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Private Properties
-    internal let viewModel = HomeViewModel(with: ProductsService())
-    private var dataSource: DataProducts?
+    internal let viewModel = HomeViewModel(with: DigioService())
+    private var dataSource: DataModel?
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -66,14 +66,14 @@ extension HomeViewController {
     func setupData() {
         viewModel.delegate = self
         self.tableView.showLoading()
-        viewModel.fetchProducts()
+        viewModel.fetchData()
     }
 }
 
 // MARK: - ViewControllerViewModelDelegate
 
 extension HomeViewController: HomeViewModelDelegate {
-    func onSuccessFetchingProducts(products: DataProducts) {
+    func onSuccessFetchingProducts(products: DataModel) {
         self.dataSource = products
         self.showTableView()
     }

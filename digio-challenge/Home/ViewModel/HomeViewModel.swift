@@ -8,24 +8,24 @@
 import Foundation
 
 protocol HomeViewModelDelegate: AnyObject {
-    func onSuccessFetchingProducts(products: DataProducts)
+    func onSuccessFetchingProducts(products: DataModel)
     func onFailureFetchingProducts(error: Error)
 }
 
 class HomeViewModel {
     
     // MARK: - Private Properties
-    let productsService: ProductsServiceProtocol
+    let productsService: DigioServiceProtocol
     var delegate: HomeViewModelDelegate?
     let sections: [Sections] = [.header, .spotlight, .cash, .products]
     // MARK: - Inits
     
-    init(with service: ProductsServiceProtocol) {
+    init(with service: DigioServiceProtocol) {
         self.productsService = service
     }
     
-    func fetchProducts() {
-        productsService.fetchProducts { result in
+    func fetchData() {
+        productsService.fetchData { result in
             switch result {
             
             case .success(let products):

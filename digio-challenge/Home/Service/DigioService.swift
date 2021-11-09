@@ -6,11 +6,11 @@
 //
 
 import Foundation
-protocol ProductsServiceProtocol: AnyObject {
-    func fetchProducts(completion: @escaping(Result<DataProducts, Error>) -> Void)
+protocol DigioServiceProtocol: AnyObject {
+    func fetchData(completion: @escaping(Result<DataModel, Error>) -> Void)
 }
 
-class ProductsService {
+class DigioService {
     private var service: NetworkService
     
     init(service: NetworkService = NetworkService()) {
@@ -18,8 +18,8 @@ class ProductsService {
     }
 }
 
-extension ProductsService: ProductsServiceProtocol {
-    func fetchProducts(completion: @escaping(Result<DataProducts, Error>) -> Void) {
+extension DigioService: DigioServiceProtocol {
+    func fetchData(completion: @escaping(Result<DataModel, Error>) -> Void) {
         let url = URL(string: Constants.productsURL)!
         _ = service.request(for: url, completion: completion)
     }
