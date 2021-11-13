@@ -31,8 +31,6 @@
 		41D99920273988FF00F3846C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9991F273988FF00F3846C /* Constants.swift */; };
 		41D9992227398A5500F3846C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992127398A5500F3846C /* HomeViewModel.swift */; };
 		41D9992527398D5100F3846C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992427398D5100F3846C /* UITableView+Extensions.swift */; };
-		41D9992827398E9C00F3846C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992627398E9C00F3846C /* ProductCell.swift */; };
-		41D9992927398E9C00F3846C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9992727398E9C00F3846C /* ProductCell.xib */; };
 		41D9992D2739A85F00F3846C /* SpotlightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */; };
 		41D9992E2739A85F00F3846C /* SpotlightCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */; };
 		41D999312739A9B300F3846C /* SpotlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9992F2739A9B300F3846C /* SpotlightCollectionViewCell.swift */; };
@@ -94,8 +92,6 @@
 		41D9991F273988FF00F3846C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		41D9992127398A5500F3846C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		41D9992427398D5100F3846C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		41D9992627398E9C00F3846C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		41D9992727398E9C00F3846C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		41D9992B2739A85F00F3846C /* SpotlightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionView.swift; sourceTree = "<group>"; };
 		41D9992C2739A85F00F3846C /* SpotlightCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotlightCollectionView.xib; sourceTree = "<group>"; };
 		41D9992F2739A9B300F3846C /* SpotlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -254,8 +250,6 @@
 		41D999172739876500F3846C /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				41D9992627398E9C00F3846C /* ProductCell.swift */,
-				41D9992727398E9C00F3846C /* ProductCell.xib */,
 				41D999342739F3FB00F3846C /* HeaderCellTableViewCell.swift */,
 				41D999352739F3FB00F3846C /* HeaderCellTableViewCell.xib */,
 				41D9992A2739A7AF00F3846C /* ProductCollectionView */,
@@ -455,7 +449,6 @@
 				41D998EB273985BD00F3846C /* LaunchScreen.storyboard in Resources */,
 				41D999372739F3FB00F3846C /* HeaderCellTableViewCell.xib in Resources */,
 				41B2FCD2273A757D008D15EE /* ProductCollectionViewCell.xib in Resources */,
-				41D9992927398E9C00F3846C /* ProductCell.xib in Resources */,
 				41B2FCD6273A9EA8008D15EE /* DetailViewController.xib in Resources */,
 				41B2FCCE273A742A008D15EE /* ProductCollectionView.xib in Resources */,
 				41D999322739A9B300F3846C /* SpotlightCollectionViewCell.xib in Resources */,
@@ -601,7 +594,6 @@
 				41D9992D2739A85F00F3846C /* SpotlightCollectionView.swift in Sources */,
 				41D9991E273987E600F3846C /* Model.swift in Sources */,
 				41D99920273988FF00F3846C /* Constants.swift in Sources */,
-				41D9992827398E9C00F3846C /* ProductCell.swift in Sources */,
 				41B2FCCD273A742A008D15EE /* ProductCollectionView.swift in Sources */,
 				41B2FCC9273A689F008D15EE /* UIDigioTableViewCell.swift in Sources */,
 				41D998E1273985BC00F3846C /* SceneDelegate.swift in Sources */,

@@ -32,7 +32,7 @@ extension HomeViewController {
         tableView.separatorStyle = .none
         tableView.backgroundColor = .white
         
-        tableView.estimatedRowHeight = 101
+        tableView.estimatedRowHeight = 220
         tableView.rowHeight = UITableView.automaticDimension
         tableView.contentInset = UIEdgeInsets(top: 0,
                                               left: 0,
@@ -124,17 +124,15 @@ extension HomeViewController: UITableViewDataSource {
 // MARK: - TableView Delegate
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let sec = viewModel.sections[indexPath.section]
-        switch sec {
-        case .header:
-            return 75
-        case .spotlight:
-            return 200
-        case .cash:
-            return 200
-        case .products:
-            return 200
-        }
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layoutIfNeeded()
     }
 }
 

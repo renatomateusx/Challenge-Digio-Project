@@ -62,8 +62,8 @@
             filePath = "digio-challenge/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "didProductSelected(product:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -81,6 +81,22 @@
             startingLineNumber = "39"
             endingLineNumber = "39"
             landmarkName = "testFetchPostsIfFailure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED375DEA-B6F1-4CD2-9FD8-F31353936A2E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "digio-challengeTests/DigioServiceMockSuccess.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -32,6 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="182" id="0pC-F2-2KE"/>
                             <constraint firstAttribute="trailing" secondItem="H8O-JF-lyp" secondAttribute="trailing" constant="8" id="Dhp-nw-bm8"/>
                             <constraint firstItem="BmS-1b-ajf" firstAttribute="leading" secondItem="2Ml-dI-f7m" secondAttribute="leading" constant="8" id="Siz-hS-0XW"/>
                             <constraint firstItem="BmS-1b-ajf" firstAttribute="top" secondItem="2Ml-dI-f7m" secondAttribute="top" constant="6" id="Tsj-Uc-fIP"/>
