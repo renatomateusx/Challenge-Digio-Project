@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,43 +12,28 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="HeaderCellTableViewCell" customModule="digio_challenge" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-h4-2Qv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, Maria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-aF-QFn">
-                                <rect key="frame" x="20" y="15" width="280" height="50"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, Maria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-aF-QFn">
+                        <rect key="frame" x="10" y="17" width="300" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="75" id="5Gb-EU-Qbx"/>
-                            <constraint firstAttribute="trailing" secondItem="ism-aF-QFn" secondAttribute="trailing" constant="20" id="hbq-NG-aHf"/>
-                            <constraint firstAttribute="bottom" secondItem="ism-aF-QFn" secondAttribute="bottom" constant="10" id="htd-LE-3Zl"/>
-                            <constraint firstItem="ism-aF-QFn" firstAttribute="top" secondItem="A9H-h4-2Qv" secondAttribute="top" constant="15" id="shQ-by-eF5"/>
-                            <constraint firstItem="ism-aF-QFn" firstAttribute="leading" secondItem="A9H-h4-2Qv" secondAttribute="leading" constant="20" id="zkd-92-ITb"/>
+                            <constraint firstAttribute="height" constant="50" id="8xb-Ea-FD1"/>
                         </constraints>
-                    </view>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="A9H-h4-2Qv" secondAttribute="bottom" id="10Q-t9-dcp"/>
-                    <constraint firstItem="A9H-h4-2Qv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EJq-y2-vye"/>
-                    <constraint firstAttribute="trailing" secondItem="A9H-h4-2Qv" secondAttribute="trailing" id="Jp5-nF-Gcl"/>
-                    <constraint firstItem="A9H-h4-2Qv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="n4W-Jb-Wb1"/>
+                    <constraint firstAttribute="trailing" secondItem="ism-aF-QFn" secondAttribute="trailing" constant="10" id="CFV-pI-siz"/>
+                    <constraint firstAttribute="bottom" secondItem="ism-aF-QFn" secondAttribute="bottom" constant="17" id="TGe-xz-ycj"/>
+                    <constraint firstItem="ism-aF-QFn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="aFa-He-ZoN"/>
+                    <constraint firstItem="ism-aF-QFn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="uDo-8M-rgx"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="115.94202898550725" y="76.339285714285708"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

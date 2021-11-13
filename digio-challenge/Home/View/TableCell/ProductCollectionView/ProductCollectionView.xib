@@ -23,6 +23,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75h-hT-QBn">
                                 <rect key="frame" x="8" y="20" width="262" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="gPl-dV-yzn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.33725490200000002" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -30,6 +33,9 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ijj-5d-fAw">
                                 <rect key="frame" x="18" y="54" width="294" height="159"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="Lzp-oI-vz0"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ecB-K9-wN8">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -45,7 +51,6 @@
                             <constraint firstItem="Ijj-5d-fAw" firstAttribute="top" secondItem="75h-hT-QBn" secondAttribute="bottom" constant="10" id="FZD-7P-0KG"/>
                             <constraint firstItem="75h-hT-QBn" firstAttribute="top" secondItem="eMj-Za-FSk" secondAttribute="top" constant="20" id="Icg-sK-CgE"/>
                             <constraint firstAttribute="bottom" secondItem="Ijj-5d-fAw" secondAttribute="bottom" id="KPP-TI-dV2"/>
-                            <constraint firstAttribute="height" constant="213" id="hdf-Kc-vCI"/>
                             <constraint firstItem="Ijj-5d-fAw" firstAttribute="leading" secondItem="eMj-Za-FSk" secondAttribute="leading" constant="18" id="iSo-05-33m"/>
                             <constraint firstAttribute="trailing" secondItem="Ijj-5d-fAw" secondAttribute="trailing" constant="8" id="vw8-eC-Rqv"/>
                         </constraints>
