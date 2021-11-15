@@ -50,10 +50,10 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Ej9-MZ-MmQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0ao-dx-bgT"/>
-                <constraint firstAttribute="bottom" secondItem="Ej9-MZ-MmQ" secondAttribute="bottom" id="DSn-Qe-w1u"/>
-                <constraint firstItem="Ej9-MZ-MmQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XFh-qY-m6b"/>
-                <constraint firstAttribute="trailing" secondItem="Ej9-MZ-MmQ" secondAttribute="trailing" id="eTv-7d-DyN"/>
+                <constraint firstItem="Ej9-MZ-MmQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NWZ-IU-FVP"/>
+                <constraint firstItem="Ej9-MZ-MmQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X48-ZC-XHO"/>
+                <constraint firstAttribute="trailing" secondItem="Ej9-MZ-MmQ" secondAttribute="trailing" id="ocm-6d-Ram"/>
+                <constraint firstAttribute="bottom" secondItem="Ej9-MZ-MmQ" secondAttribute="bottom" id="uB7-aD-tZa"/>
             </constraints>
             <size key="customSize" width="154" height="120"/>
             <connections>
